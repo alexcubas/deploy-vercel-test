@@ -7,10 +7,10 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://alexcubas:9qBXP3UxJozu@ep-royal-breeze-537783.us-east-2.aws.neon.tech/neondb"
+  url      = env("DATABASE_URL")
 }
 
-//agr vai porra
+//agr vaiaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 model Book {
   id          String @id @default(uuid())
