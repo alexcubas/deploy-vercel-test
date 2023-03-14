@@ -1,15 +1,18 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/server.ts",
-      "use": "@vercel/node"
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/server.ts",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "src/server.ts"
+        }
+    ],
+    "env": {
+        "DATABASE_URL": "postgres://alexcubas:9qBXP3UxJozu@ep-royal-breeze-537783.us-east-2.aws.neon.tech/neondb"
     }
-  ],
-  "routes": [
-    {
-      "src": "(.*)",
-      "dest": "src/server.ts"
-    }
-  ]
 }
