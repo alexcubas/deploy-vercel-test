@@ -10,6 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//agr vai
+
 model Book {
   id          String @id @default(uuid())
   name        String
