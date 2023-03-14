@@ -10,7 +10,7 @@ datasource db {
   url      = "postgres://alexcubas:9qBXP3UxJozu@ep-royal-breeze-537783.us-east-2.aws.neon.tech/neondb"
 }
 
-//agr vai
+//agr vai porra
 
 model Book {
   id          String @id @default(uuid())
